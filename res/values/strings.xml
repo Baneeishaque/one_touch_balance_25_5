@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">OneTouch Balance</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+        <string-array name="networks_array">
+            <item>Idea</item>
+            <item>Airtel</item>
+            <item>Vodafone</item>
+            <item>BSNL</item>
+            <item>Tata Docomo</item>
+            <item>Reliance</item>
+            <item>Aircel</item>
+
+
+        </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_sec">SecActivity</string>
+    <string name="Network_Operator">Network Operator</string>
+    <string name="About">About</string>
+    <string name="main">Main Balance</string>
+    <string name="smsb">SMS Balance</string>
+    <string name="datab">Data Balance</string>
+    <string name="cust">Call Service Center</string>
+    <string name="link">www.ayedevelopers.in</string>
+    <string name="recharge">Recharge</string>
+    <string name="support">contactaye@gmail.com</string>
+    <string name="contact">Support and Feedback:</string>
+</resources>

@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+
+    android:orientation="vertical"
+
+
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Operator"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/textView"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+     <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="19sp"
+            android:text="Carrier"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/carrierView"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:id="@+id/carrierLogo"
+
+            android:layout_height="fill_parent"
+
+            android:layout_weight="0.29" />
+
+
+    </LinearLayout>
+
+
+        <TextView
+
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="To check your balances:"
+            android:textStyle="bold"
+            android:id="@+id/textView2" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <Button
+
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="4dp"
+            android:onClick="call"
+            android:id="@+id/callbut"
+            android:text="@string/main"
+            android:background="@drawable/buttonshape"
+            android:textColor="#ffffffff"
+            android:textStyle="bold|normal"
+            android:textSize="15dp"
+            android:backgroundTintMode="multiply"
+            android:focusableInTouchMode="false" />
+
+        <Button
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/smsb"
+            android:onClick="sms"
+            android:id="@+id/smsbut"
+
+
+            android:background="@drawable/buttonshape"
+            android:textColor="#ffffffff"
+            android:textSize="15dp"
+            android:textStyle="bold|normal"
+            android:backgroundTintMode="multiply"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/datab"
+            android:onClick="data"
+            android:id="@+id/databut"
+            android:background="@drawable/buttonshape"
+            android:textColor="#ffffffff"
+            android:textSize="15dp"
+            android:textStyle="bold|normal"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="care"
+            android:text="@string/cust"
+            android:id="@+id/splbut"
+            android:background="@drawable/buttonshape"
+            android:textColor="#ffffffff"
+            android:textStyle="bold|normal"
+            android:textSize="15dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="To recharge:"
+        android:textStyle="bold"
+        android:id="@+id/textView3"></TextView>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        >
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:maxLength="16"
+            android:hint="Recharge Voucher"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/recharge"
+            android:onClick="rc"
+            android:id="@+id/button"
+            android:textStyle="bold"
+            android:background="@drawable/buttonshape2"
+            android:textColor="#ffffffff"
+             />
+
+    </LinearLayout>
+
+
+</LinearLayout>
